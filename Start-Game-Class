@@ -1,0 +1,30 @@
+package com.mycompany.mavenproject1;
+
+//*
+// * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+// */
+
+import javax.swing.JFrame;
+
+/**
+ *
+ * @author akarsh
+ */
+public class Brick_Breaker_Game {
+
+    public static void main(String[] args) {
+        
+        JFrame my_frame = new JFrame();
+        my_frame.setBounds(50,50,700,600);
+        my_frame.setResizable(false);
+        my_frame.setTitle("Brick Breaker");
+        my_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        GamePlay game = new GamePlay();
+        //System.out.println("ADDING GAMEPLAY");
+        my_frame.add(game);
+        my_frame.setVisible(true);
+        //System.out.println("GAMEPLAY ADDED");
+
+        return;
+    }
+}
